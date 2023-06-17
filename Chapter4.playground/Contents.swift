@@ -294,6 +294,270 @@ print(string.shuffled()) // String도 컬렉션이기 때문에 뒤섞임
 
 print()
 /* [ 열거형 ] */
+/**
+ - 열거형은 연관된 항목들을 묶어서 표현할 수 있는 타입
+ - 배열이나 딕셔너리 같은 타입과 다르게 프로그래머가 정의해준 항목 값 외에는 추가/수정이 불가함
+ - 스위프트의 열거형은 항목별로 값을 가질 수도, 가지지 않을 수도 있음
+    - 예를 들어 C언어는 열거형의 각 항목 값이 정수 타입으로 기본 지정되지만, **스위프트의 열거형은 각 항목이 그 자체로 고유의 값이 될 수 있음**
+ 
+ 열거형은 다음과 같은 경우에 요긴하게 사용 가능
+   - 제한된 선택지를 주고 싶을 때
+   - 정해진 값 외에는 입력받고 싶지 않을 때
+   - 예상된 입력 값이 한정되어 있을 때
+ */
 print("[ 열거형 ]")
 
+// 스위프트의 열거형은 enum 키워드로 선언 가능
+enum School {
+    // 각 항목들은 그 자체가 고유의 값임
+    case primary        // 유치원
+    case elementry      // 초등
+    case middle         // 중등
+    case high           // 고등
+    case college        // 대학
+    case university     // 대학교
+    case graduate       // 대학원
+}
+// 한 줄에 모두 표현해줄 수도 있음
+//enum School { // 위와 같은 표현
+//    case primary, elementry, middle, high, college, university, graduate
+//}
 
+// 열거형 변수 생성 후 값 할당
+var highestEducationLevel: School = School.university
+var highestEducationLevel2: School = .university // 위와 같은 표현
+
+highestEducationLevel = .graduate
+
+
+print()
+/* [ 원시 값(Raw Value) ] */
+/**
+ - 열거형의 각 항목은 자체로도 하나의 값이지만 각 항목의 **원시 값(Raw Value)**도 가질 수 있음
+ - .rawValue 프로퍼티를 통해 원시 값을 사용 가능
+ */
+print("[ 원시 값(Raw Value) ]")
+enum School2: String {
+    case primary = "유치원"
+    case elementy = "초등"
+    case middle = "중등"
+    case high = "고등"
+    case college = "대학"
+    case university = "대학교"
+    case graduate = "대학원"
+}
+let highestEducationLevel3: School2 = School2.university
+print("저의 최종학력은 \(highestEducationLevel3.rawValue) 졸업입니다.")
+// 저의 최종학력은 대학교 졸업입니다.
+
+enum WeekDays: Character {
+    case mon = "월", tue = "화", wed = "수", thu = "목", fri = "금", sat = "토", sun = "일"
+}
+let today: WeekDays = WeekDays.fri
+print("오늘은 \(today.rawValue)요일입니다.")
+// 오늘은 금요일입니다.
+
+/**
+ - 일부 항목만 원시 값 주는 것도 가능함 (스위프트가 알아서 처리)
+   - 문자열 형식의 원시 값을 지정해줬다면 각 항목 이름을 그대로 원시 값으로 갖게 됨
+   - 정수 타입이라면 첫 항목을 기준으로 0부터 1씩 늘어난 값을 갖게 된
+ */
+enum School3: String {
+    case primary =  "유치원"
+    case elementry = "초등학교"
+    case middle = "중학교"
+    case high = "고등학교"
+    case college
+    case university
+    case graduate
+}
+let highestEducationLevel4: School3 = School3.university
+print("저의 최종 학력은 \(highestEducationLevel4.rawValue) 졸업입니다.")
+// 저의 최종 학력은 university 졸업입니다.
+print(School3.elementry.rawValue) // 초등학교
+
+enum Numbers: Int {
+    case zero
+    case one
+    case two
+    case ten = 10
+}
+print("\(Numbers.zero.rawValue), \(Numbers.one.rawValue), \(Numbers.two.rawValue), \(Numbers.ten.rawValue)") // 0, 1, 2, 10
+
+
+print()
+/* [ 연관 값 ] */
+/**
+ - 스위프트의 열거형 각 항목이 연관 값을 가지게 되면, 기존 프로그래밍 언어의 공용체 형태를 띌 수도 있음
+ - 열거형 내의 항목(case)이 자신과 연관된 값을 가질 수 있음
+ - 연관 값은 각 항목 옆에 소괄호로 묶어 표현
+ - 다른 항목이 연관 값을 갖는다고 모든 항목이 가질 필요는 X
+ */
+print("[ 연관 값 ]")
+
+enum MainDish {
+    case pasta(taste: String)
+    case pizza(dough: String, topping: String)
+    case chicken(withSauce: Bool)
+    case rice
+}
+var dinner: MainDish = MainDish.pasta(taste: "크림")
+dinner = .pizza(dough: "치즈크러스트", topping: "불고기")
+dinner = .chicken(withSauce: true)
+dinner = .rice
+
+
+enum PastaTaste {
+    case cream, tomato
+}
+enum PizzaDough {
+    case cheeseCrust, thin, original
+}
+enum PizzaTopping {
+    case pepperoni, cheese, bacon
+}
+
+enum MainDish2 {
+    case pasta(taste: PastaTaste)
+    case pizza(dough: PizzaDough, topping: PizzaTopping)
+    case chicken(withSauce: Bool)
+    case rice
+}
+var dinner2: MainDish2 = MainDish2.pasta(taste: .tomato)
+dinner2 = MainDish2.pizza(dough: PizzaDough.original, topping: .bacon)
+
+
+
+print()
+/* [ 항목 순회 ] */
+/**
+ - 열거형에 포함된 모든 케이스를 알아야 할 경우 **CaseIterable 프로토콜**을 채택해준다.
+ - 그러면 열거형에 .allCases 라는 이름의 타입 프로퍼티를 통해 모든 케이스의 컬렉션을 생성해줌
+ */
+print("[ 항목 순회 ]")
+enum School4: CaseIterable {
+    case primary
+    case elementry
+    case middle
+    case high
+    case college
+    case university
+    case graduate
+}
+let allCases: [School4] = School4.allCases
+print(allCases)
+
+
+enum School5: String, CaseIterable {
+    case primary = "유치원"
+    case elementy = "초등학교"
+    case middle = "중학교"
+    case high = "고등학교"
+    case college = "대학"
+    case university = "대학교"
+    case graduate = "대학원"
+}
+let allCases2: [School5] = School5.allCases
+print(allCases2)
+
+/**
+ - available 속성을 통해 특정 케이스에 대해 플랫폼별로 사용 조건을 추가하는 경우 CaseIterable 프로토콜 채택 만으로는 allCases 프로퍼티를 사용할 수 없음
+ - 열거형의 케이스가 연관 값을 갖는 경우에도 allCases 그냥 사용할 수 X
+ 
+ - 그럴 때는 직접 allCases 프로퍼티를 구현해 주어야 함
+ (코드는  책 109p 참고)
+ */
+
+
+
+print()
+/* [ 순환 열거형 ] */
+/**
+ - 순환 열거형은 열거형 항목의 연관 값이 열거형 자신의 값이고자 할 때 사용
+ - 순환 열거형을 명시하고 싶다면 indirect 키워드를 사용
+    - 특정 항목에만 한정하고 싶다면 case 앞에 indirect
+    - 열거형 전체에 적용하고 싶다면 enum 앞에 indirect
+ */
+print("[ 순환 열거형 ]")
+
+// 특정 항목에 순환 열거형 항목 명시
+enum ArithmeticExpression {
+    case number(Int)
+    indirect case addition(ArithmeticExpression, ArithmeticExpression)
+    indirect case multiplization(ArithmeticExpression, ArithmeticExpression)
+}
+
+// 열거형 전체에 순환 열거형 명시
+indirect enum ArithmethicExpression2 {
+    case number(Int)
+    case addition(ArithmethicExpression2, ArithmethicExpression2)
+    case multiplization(ArithmethicExpression2, ArithmethicExpression2)
+}
+
+// 순환 열거형의 사용
+let five = ArithmeticExpression.number(5)
+let four = ArithmeticExpression.number(4)
+let sum = ArithmeticExpression.addition(five, four)
+let final = ArithmeticExpression.multiplization(sum, ArithmeticExpression.number(2))
+
+// ArithmeticExpression 열거형의 계산을 도와주는 순환 함수(Recursive Function)
+func evaluate(_ expression: ArithmeticExpression) -> Int {
+    switch expression {
+    case .number(let value):
+        return value
+    case .addition(let left, let right):
+        return evaluate(left) + evaluate(right)
+    case .multiplization(let left, let right):
+        return evaluate(left) * evaluate(right)
+    }
+}
+
+let result: Int = evaluate(final)
+print("(5 + 4) * 2 = \(result)") // (5 + 4) * 2 = 18
+
+/**
+ **==> indirect 키워드는 이진 탐색 트리 등의 순환 알고리즘을 구현할 때 유용하게 사용할 수 있음**
+ */
+
+
+
+print()
+/* [ 비교 가능한 열거형 ] */
+/**
+ - **Comparable 프로토콜**을 준수하는 연관 값만 갖거나 연관 값이 없는 열거형은 Comparable 프로토콜을 채택하면 각 케이스를 비교할 수 있음
+ - 앞에 위치한 케이스가 더 작은 값이 된다.
+ */
+print("[ 비교 가능한 열거형 ]")
+
+enum Condition: Comparable {
+    case terrible
+    case bad
+    case good
+    case great
+}
+let myCondition: Condition = Condition.great
+let yourCondition: Condition = Condition.bad
+
+if myCondition >= yourCondition {
+    print("제 상태가 더 좋군요")
+} else {
+    print("당신의 상태가 더 좋아요")
+}
+// 제 상태가 더 좋군요
+
+
+enum Device: Comparable {
+    case iPhone(version: String)
+    case iPad(version: String)
+    case macBook
+    case iMac
+}
+var devices: [Device] = []
+devices.append(Device.iMac)
+devices.append(Device.iPhone(version: "14.3"))
+devices.append(Device.iPhone(version: "6.1"))
+devices.append(Device.iPad(version: "10.3"))
+devices.append(Device.macBook)
+
+let sortedDevices: [Device] = devices.sorted() // 정렬된 devices 배열 반환 (기존 devices 배열은 그대로)
+print(sortedDevices)
