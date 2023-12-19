@@ -8,7 +8,7 @@
 - [Chapter 2. 스위프트 처음 시작하기 (완료✅)](https://github.com/kybeen/Swift-Study/blob/main/Chapter2/Chapter2.md)
 - [Chapter 3. 데이터 타입 기본 (완료✅)](https://github.com/kybeen/Swift-Study/blob/main/Chapter3/Chapter3.md)
 - [Chapter 4. 데이터 타입 고급 (완료✅)](https://github.com/kybeen/Swift-Study/blob/main/Chapter4/Chapter4.md)
-- Chapter 5. 연산자
+- [Chapter 5. 연산자 (완료✅)](https://github.com/kybeen/Swift-Study/blob/main/Chapter5/Chapter5.md)
 - Chapter 6. 흐름 제어
 - Chapter 7. 함수
 - Chapter 8. 옵셔널
