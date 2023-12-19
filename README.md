@@ -4,10 +4,10 @@
 ----
 
 ### **PART 1. 스위프트 기초**
-- Chapter 1. 스위프트 (완료✅)
-- Chapter 2. 스위프트 처음 시작하기 (완료✅)
-- Chapter 3. 데이터 타입 기본 (완료✅)
-- Chapter 4. 데이터 타입 고급 (완료✅)
+- [Chapter 1. 스위프트 (완료✅)](https://github.com/kybeen/Swift-Study/blob/main/Chapter1/Chapter1.md)
+- [Chapter 2. 스위프트 처음 시작하기 (완료✅)](https://github.com/kybeen/Swift-Study/blob/main/Chapter2/Chapter2.md)
+- [Chapter 3. 데이터 타입 기본 (완료✅)](https://github.com/kybeen/Swift-Study/blob/main/Chapter3/Chapter3.md)
+- [Chapter 4. 데이터 타입 고급 (완료✅)](https://github.com/kybeen/Swift-Study/blob/main/Chapter4/Chapter4.md)
 - Chapter 5. 연산자
 - Chapter 6. 흐름 제어
 - Chapter 7. 함수
