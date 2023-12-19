@@ -259,7 +259,7 @@ var highestEducationLevel: School = .university // 위와 같은 표현
   - ex) 일부 항목에만 String 타입의 원시 값을 지정해주면 나머지 항목들은 각 항목의 이름을 그대로 원시 값으로 갖게 된다.
 ``` Swift
 // [ 열거형의 원시 값 지정과 사용 ]
-enum School {
+enum School: String {
     case primary = "유치원"
     case elementary = "초등"
     case middle = "중등"
