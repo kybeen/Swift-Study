@@ -11,7 +11,7 @@
 - [Chapter 5. 연산자 ✅](https://github.com/kybeen/Swift-Study/blob/main/Chapter5/Chapter5.md)
 - [Chapter 6. 흐름 제어 ✅](https://github.com/kybeen/Swift-Study/blob/main/Chapter6/Chapter6.md)
 - [Chapter 7. 함수 ✅](https://github.com/kybeen/Swift-Study/blob/main/Chapter7/Chapter7.md)
-- Chapter 8. 옵셔널
+- [Chapter 8. 옵셔널 ✅](https://github.com/kybeen/Swift-Study/blob/main/Chapter8/Chapter8.md)
 
 ### **PART 2. 객체지향 프로그래밍과 스위프트**
 - Chapter 9. 구조체와 클래스
