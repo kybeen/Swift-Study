@@ -10,7 +10,7 @@
 - [Chapter 4. 데이터 타입 고급 ✅](https://github.com/kybeen/Swift-Study/blob/main/Chapter4/Chapter4.md)
 - [Chapter 5. 연산자 ✅](https://github.com/kybeen/Swift-Study/blob/main/Chapter5/Chapter5.md)
 - [Chapter 6. 흐름 제어 ✅](https://github.com/kybeen/Swift-Study/blob/main/Chapter6/Chapter6.md)
-- Chapter 7. 함수
+- [Chapter 7. 함수 ✅](https://github.com/kybeen/Swift-Study/blob/main/Chapter7/Chapter7.md)
 - Chapter 8. 옵셔널
 
 ### **PART 2. 객체지향 프로그래밍과 스위프트**
