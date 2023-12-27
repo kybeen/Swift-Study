@@ -17,7 +17,7 @@
 - [Chapter 9. 구조체와 클래스 ✅](https://github.com/kybeen/Swift-Study/blob/main/Chapter9/Chapter9.md)
 - [Chapter 10. 프로퍼티와 메서드 ✅](https://github.com/kybeen/Swift-Study/blob/main/Chapter10/Chapter10.md)
 - [Chapter 11. 인스턴스 생성 및 소멸 ✅](https://github.com/kybeen/Swift-Study/blob/main/Chapter11/Chapter11.md)
-- Chapter 12. 접근제어
+- [Chapter 12. 접근제어 ✅](https://github.com/kybeen/Swift-Study/blob/main/Chapter12/Chapter12.md)
 
 ### **PART 3. 함수형 프로그래밍과 스위프트**
 - Chapter 13. 클로저
