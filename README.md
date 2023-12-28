@@ -20,7 +20,7 @@
 - [Chapter 12. 접근제어 ✅](https://github.com/kybeen/Swift-Study/blob/main/Chapter12/Chapter12.md)
 
 ### **PART 3. 함수형 프로그래밍과 스위프트**
-- Chapter 13. 클로저
+- [Chapter 13. 클로저 ✅](https://github.com/kybeen/Swift-Study/blob/main/Chapter13/Chapter13.md)
 - Chapter 14. 옵셔널 체이닝과 빠른 종료
 - Chapter 15. 맵, 필터, 리듀스
 - Chapter 16. 모나드
