@@ -165,7 +165,7 @@ print(oddNumbers)   // [3, 5, 7]
   - 배열이라면 배열의 모드느 값을 전달인자로 전달받은 클로저의 연산 결과로 합해준다.
 - `스위프트의 리듀스는 2가지 형태`로 구현되어 있음
 
-#### ✔️ 1. 클로저가 각 요소를 전달받아 연산한 후 다음 클로저 실행을 위해 반환하며 컨테이너를 순환하는 형태
+### ✔️ 1. 클로저가 각 요소를 전달받아 연산한 후 다음 클로저 실행을 위해 반환하며 컨테이너를 순환하는 형태
  ``` Swift
  public func reduce<Result>(_ initialResult: Result,
       _ nextPartialResult: (Result, Element) throws -> Result) rethrows -> Result
@@ -175,7 +175,7 @@ print(oddNumbers)   // [3, 5, 7]
   - 👉 `클로저의 첫 번째 매개변수` : 리듀스 메서드의 `initialResult` 매개변수를 통해 전달받은 초깃값 또는 이전 클로저의 결괏값 (순회가 끝나면 리듀스의 최종 결괏값이 됨)
   - 👉 `클로저의 두 번째 매개변수` : 리듀스 메서드가 순환하는 컨테이너의 요소
 
-#### ✔️ 2. 컨테이너를 순환하며 클로저가 실행되지만 클로저가 따로 결괏값을 반환하지 않는 형태
+### ✔️ 2. 컨테이너를 순환하며 클로저가 실행되지만 클로저가 따로 결괏값을 반환하지 않는 형태
 - `inout` 매개변수를 사용하여 `초깃값에 직접 연산`을 실행
 ``` Swift
 public func reduce<Result>(into initialResult: Result,
