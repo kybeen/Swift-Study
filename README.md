@@ -26,7 +26,7 @@
 - [Chapter 16. 모나드 ✅](https://github.com/kybeen/Swift-Study/blob/main/Chapter16/Chapter16.md)
 
 ### **PART 4. 확장**
-- Chapter 17. 서브스크립트
+- [Chapter 17. 서브스크립트 ✅](https://github.com/kybeen/Swift-Study/blob/main/Chapter17/Chapter17.md)
 - Chapter 18. 상속
 - Chapter 19. 타입캐스팅
 - Chapter 20. 프로토콜
