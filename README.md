@@ -29,7 +29,7 @@
 - [Chapter 17. 서브스크립트](https://github.com/kybeen/Swift-Study/blob/main/Chapter17/Chapter17.md)
 - [Chapter 18. 상속](https://github.com/kybeen/Swift-Study/blob/main/Chapter18/Chapter18.md)
 - [Chapter 19. 타입캐스팅](https://github.com/kybeen/Swift-Study/blob/main/Chapter19/Chapter19.md)
-- Chapter 20. 프로토콜
+- [Chapter 20. 프로토콜](https://github.com/kybeen/Swift-Study/blob/main/Chapter20/Chapter20.md)
 - Chapter 21. 익스텐션
 - Chapter 22. 제네릭
 - Chapter 23. 프로토콜 지향 프로그래밍
