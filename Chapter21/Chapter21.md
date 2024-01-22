@@ -266,7 +266,7 @@ print(++myPosition)                 // Position(x: 6, y: 6)
 
 ### 📌 `중첩 데이터 타입`
 - 익스텐션을 통해 타입에 `중첩 데이터 타입(Nested Type)`을 추가할 수 있다.
-  - ([Chapter 24. 타입 중첩]() 참고)
+  - ([Chapter 24. 타입 중첩](https://github.com/kybeen/Swift-Study/blob/main/Chapter24/Chapter24.md) 참고)
   ``` Swift
   // [ 익스텐션을 통한 중첩 데이터 타입 추가 ]
   
