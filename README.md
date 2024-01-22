@@ -32,7 +32,7 @@
 - [Chapter 20. 프로토콜](https://github.com/kybeen/Swift-Study/blob/main/Chapter20/Chapter20.md)
 - [Chapter 21. 익스텐션](https://github.com/kybeen/Swift-Study/blob/main/Chapter21/Chapter21.md)
 - [Chapter 22. 제네릭](https://github.com/kybeen/Swift-Study/blob/main/Chapter22/Chapter22.md)
-- Chapter 23. 프로토콜 지향 프로그래밍
+- [Chapter 23. 프로토콜 지향 프로그래밍](https://github.com/kybeen/Swift-Study/blob/main/Chapter23/Chapter23.md)
 
 ### **PART 5. 스위프트 고급**
 - Chapter 24. 타입 중첩
