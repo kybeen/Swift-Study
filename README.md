@@ -38,7 +38,7 @@
 - Chapter 24. 타입 중첩
 - Chapter 25. 패턴
 - Chapter 26. where절
-- Chapter 27. ARC
+- [Chapter 27. ARC](https://github.com/kybeen/Swift-Study/blob/main/Chapter27/Chapter27.md)
 - Chapter 28. 오류처리
 - Chapter 29. 메모리 안전
 - Chapter 30. 불명확 타입
