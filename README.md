@@ -42,3 +42,14 @@
 - [Chapter 28. 오류처리](https://github.com/kybeen/Swift-Study/blob/main/Chapter28/Chapter28.md)
 - [Chapter 29. 메모리 안전](https://github.com/kybeen/Swift-Study/blob/main/Chapter29/Chapter29.md)
 - [Chapter 30. 불명확 타입](https://github.com/kybeen/Swift-Study/blob/main/Chapter30/Chapter30.md)
+
+### **부록**
+- A. 스위프트의 주요 프로토콜
+- B. 스위프트의 주요 함수
+- C. 스위프트의 예약어
+- D. 디버깅 식별자
+- E. 컴파일러 제어 구문
+- F. 사용 가능 조건 확인
+- G. 속성
+- H. 타입 별칭 및 호환 타입
+- I. 알아두면 유용한 타입
