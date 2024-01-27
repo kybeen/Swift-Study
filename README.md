@@ -35,7 +35,7 @@
 - [Chapter 23. 프로토콜 지향 프로그래밍](https://github.com/kybeen/Swift-Study/blob/main/Chapter23/Chapter23.md)
 
 ### **PART 5. 스위프트 고급**
-- Chapter 24. 타입 중첩
+- [Chapter 24. 타입 중첩](https://github.com/kybeen/Swift-Study/blob/main/Chapter24/Chapter24.md)
 - Chapter 25. 패턴
 - Chapter 26. where절
 - [Chapter 27. ARC](https://github.com/kybeen/Swift-Study/blob/main/Chapter27/Chapter27.md)
