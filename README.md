@@ -37,7 +37,7 @@
 ### **PART 5. 스위프트 고급**
 - [Chapter 24. 타입 중첩](https://github.com/kybeen/Swift-Study/blob/main/Chapter24/Chapter24.md)
 - [Chapter 25. 패턴](https://github.com/kybeen/Swift-Study/blob/main/Chapter25/Chapter25.md)
-- Chapter 26. where절
+- [Chapter 26. where절](https://github.com/kybeen/Swift-Study/blob/main/Chapter26/Chapter26.md)
 - [Chapter 27. ARC](https://github.com/kybeen/Swift-Study/blob/main/Chapter27/Chapter27.md)
 - [Chapter 28. 오류처리](https://github.com/kybeen/Swift-Study/blob/main/Chapter28/Chapter28.md)
 - [Chapter 29. 메모리 안전](https://github.com/kybeen/Swift-Study/blob/main/Chapter29/Chapter29.md)
